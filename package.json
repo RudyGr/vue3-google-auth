@@ -1,0 +1,24 @@
+{
+  "name": "vue3-google-auth",
+  "version": "1.0.0",
+  "description": "Connect your Vue3 application with google auth module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue3",
+    "google",
+    "oauth2",
+    "authentication",
+    "sign",
+    "signout",
+    "login",
+    "logout"
+  ],
+  "author": {
+    "name": "Rudy Grandjean",
+    "email": "rudy.grandjean@gmail.com"
+  },
+  "license": "MIT"
+}

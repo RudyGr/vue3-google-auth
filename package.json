@@ -1,6 +1,6 @@
 {
   "name": "vue3-google-auth",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Connect your Vue3 application with google auth module",
   "main": "index.js",
   "scripts": {
@@ -16,9 +16,20 @@
     "login",
     "logout"
   ],
+  "bugs": {
+    "url": "https://github.com/rudygr/vue3-google-auth/issues"
+  },
   "author": {
     "name": "Rudy Grandjean",
     "email": "rudy.grandjean@gmail.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rudygr/vue3-google-auth.git"
+  },
+  "unpkg": "index.js"
 }

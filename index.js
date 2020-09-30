@@ -1,4 +1,6 @@
-import { inject } from 'vue';
+'use strict';
+
+var vue = require('vue');
 
 const storeKey = Symbol('gAuth');
 
@@ -156,14 +158,17 @@ GAuth.prototype.install = function install(app) {
   app.config.globalProperties.$gAuth = this;
 };
 
-export const useGAuth = () => {
-  const gAuth = inject(storeKey);
+
+const useGAuth = () => {
+  const gAuth = vue.inject(storeKey);
   if (!gAuth) {
     console.error("GAuth plugin isn't install on Vue");
   }
   return gAuth;
 };
 
-export function createGAuth(options = null) {
+function createGAuth(options = null) {
   return new GAuth(options);
 }
+
+export { useGAuth, createGAuth };
